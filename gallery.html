@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Gallery</title>
+  <style>
+    body {
+      background-color: #121212; 
+      color: #ffffff; 
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav button {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    nav button:hover {
+      background-color: #444444; 
+    }
+
+    main {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .gallery-caption {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background-color: #1f1f1f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gamezone</h1>
+    <p>Game Gallery</p>
+  </header>
+
+  <nav>
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='games.html'">Games</button>
+    <button onclick="location.href='gallery.html'">Gallery</button>
+    <button onclick="location.href='contact.html'">Contact</button>
+  </nav>
+
+  <main>
+    <img src="images/gallery.gif"style="width: 100px; height: auto; alt="gallery Banner">
+
+    <h2>Gallery of Gameplay</h2>
+    <p>Take a look at some of the most stunning gameplay moments from popular games.</p>
+
+    <div class="gallery">
+      <div>
+        <img src="images/gameplay1.jpg" alt="Epic battle in Elden Ring">
+        <div class="gallery-caption">Epic battle in Elden Ring</div>
+      </div>
+      <div>
+        <img src="images/gameplay2.jpg" alt="Stunning landscape from The Witcher 3">
+        <div class="gallery-caption">Stunning landscape from The Witcher 3</div>
+      </div>
+      <div>
+        <img src="images/gameplay3.jpg" alt="Building adventures in Minecraft">
+        <div class="gallery-caption">Building adventures in Minecraft</div>
+      </div>
+      <div>
+        <img src="images/gameplay4.jpg" alt="Action-packed Fortnite gameplay">
+        <div class="gallery-caption">Action-packed Fortnite gameplay</div>
+      </div>
+      <div>
+        <img src="images/gameplay5.jpg" alt="Intense combat in God of War">
+        <div class="gallery-caption">Intense combat in God of War</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gamezone. All rights reserved.</p>
+  </footer>
+</body>
+</html>

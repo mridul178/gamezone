@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-form {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #444444;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #666666;
+    }
+
+    .form-container {
+      text-align: center;
+    }
+
+    .form-container img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gamezone</h1>
+    <p>Contact Us</p>
+  </header>
+
+  <nav>
+    <button onclick="location.href='index.html'">Home</button>
+    <button onclick="location.href='games.html'">Games</button>
+    <button onclick="location.href='gallery.html'">Gallery</button>
+    <button onclick="location.href='contact.html'">Contact</button>
+  </nav>
+
+  <main class="form-container">
+    <img src="images/contact.gif" alt="Contact Us Banner">
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="favorite-game">Favorite Game:</label>
+      <select id="favorite-game" name="favorite-game" aria-label="Select your favorite game">
+        <option value="elden-ring">Elden Ring</option>
+        <option value="witcher3">The Witcher 3</option>
+        <option value="god-of-war">God of War</option>
+        <option value="minecraft">Minecraft</option>
+        <option value="fortnite">Fortnite</option>
+      </select>
+
+      <label>Gaming Platform:</label>
+      <input type="radio" id="pc" name="platform" value="PC" aria-label="PC">
+      <label for="pc">PC</label>
+      <input type="radio" id="console" name="platform" value="Console" aria-label="Console">
+      <label for="console">Console</label>
+      <input type="radio" id="mobile" name="platform" value="Mobile" aria-label="Mobile">
+      <label for="mobile">Mobile</label>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" placeholder="Share your thoughts..."></textarea>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+
+  <footer>
+    <div class="social-links">
+      <a href="https://www.facebook.com/gamezone/" target="_blank">Facebook</a> |
+      <a href="https://www.youtube.com/user/GameZoneOnline?feature=mhee" target="_blank">YouTube</a> |
+      <a href="https://twitter.com/GameZoneOnline" target="_blank">Twitter</a> |
+      <a href="mailto:tips@gamezone.com">Email Us</a>
+    </div>
+    <p>&copy; 2025 Gamezone. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
